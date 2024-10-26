@@ -207,7 +207,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 1.024e6
+    value: 4E6
   states:
     bus_sink: false
     bus_source: false
@@ -262,7 +262,7 @@ blocks:
     start: '0'
     step: '1'
     stop: '90'
-    value: '62'
+    value: '50'
     widget: counter_slider
   states:
     bus_sink: false
@@ -1082,7 +1082,7 @@ blocks:
     bw7: '0'
     bw8: '0'
     bw9: '0'
-    center_freq0: 988.04e6
+    center_freq0: 1e9
     center_freq1: 988.04e6
     center_freq10: '0'
     center_freq11: '0'
@@ -1359,7 +1359,7 @@ blocks:
     bw7: '0'
     bw8: '0'
     bw9: '0'
-    center_freq0: 988.04e6
+    center_freq0: 1e9
     center_freq1: 988.04e6
     center_freq10: '0'
     center_freq11: '0'

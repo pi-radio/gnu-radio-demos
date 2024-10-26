@@ -7,7 +7,7 @@
 # GNU Radio Python Flow Graph
 # Title: Not titled yet
 # Author: zapman
-# GNU Radio version: 3.10.10.0
+# GNU Radio version: 3.10.9.2
 
 from PyQt5 import Qt
 from gnuradio import qtgui
@@ -61,7 +61,7 @@ class Sine(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 4e6
+        self.samp_rate = samp_rate = 20E6
 
         ##################################################
         # Blocks
@@ -81,7 +81,7 @@ class Sine(gr.top_block, Qt.QWidget):
 
         self.uhd_usrp_sink_0.set_center_freq(1E9, 0)
         self.uhd_usrp_sink_0.set_antenna("TX/RX", 0)
-        self.uhd_usrp_sink_0.set_gain(40, 0)
+        self.uhd_usrp_sink_0.set_gain(60, 0)
         self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, 1e6, 1, 0, 0)
 
 
